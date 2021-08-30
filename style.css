@@ -5,8 +5,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-  
-   
+
 } 
 
  body{
@@ -15,6 +14,8 @@
      justify-content: center;
      align-items: center;
      flex-direction: column; 
+     background-image: url(./Imagens/felipepelaquim-utriGopnQe4-unsplash.jpg);
+     background-size: cover;
     
  }
 
@@ -24,7 +25,7 @@
     align-items: center;
     width: 500px;
     margin:auto;
-    background-color: #d90429;
+    background-color: #c71616;
     padding: 20px;  
     border-radius: 10px;
     font-family: sans-serif;
@@ -34,7 +35,7 @@
     padding-bottom: 20px;
     box-shadow:  5px 5px 5px black;
     font-family: 'Fjalla One', sans-serif;
-    letter-spacing: 1rem;
+    letter-spacing: 1rem; 
 
 }
   
@@ -65,7 +66,6 @@ button:hover{
 }
 
 
-
 #box ul li{
     list-style: none;
 }
@@ -86,6 +86,7 @@ button:hover{
     background-image: url(./Imagens/garoto.png);
     background-repeat: no-repeat;
     background-size: cover;
+  
 }
 .tempo::before{
     content: "";
