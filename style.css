@@ -5,6 +5,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+  
    
 } 
 
@@ -40,7 +41,7 @@
 input{
     width: 300px;
     height: 50px;
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
     margin-bottom: 10px;    
     border-radius: 8px; 
@@ -62,3 +63,39 @@ button:hover{
     background-color: black;
     color:white
 }
+
+
+
+#box ul li{
+    list-style: none;
+}
+.adultos::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./Imagens/adulto1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.crianca::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./Imagens/garoto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tempo::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./Imagens/tempo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
