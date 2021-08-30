@@ -12,11 +12,12 @@ function calcular() {
     let adultos = InputAdultos.value
     let criancas = InputCriancas.value
     let duracao = InputDuracao.value
+
     let totalCarne = Carne(duracao) * adultos + (Carne(duracao) /2 )* criancas;  
     let totalCerveja = Cerveja(duracao) * adultos;
     let totalBebidas = Bebida(duracao) * adultos + (Bebida(duracao) /2) * criancas ; 
     resultado.innerHTML = `<p>${totalCarne / 1000}Kg de carne </p>`
-    resultado.innerHTML += `<p>${Math.ceil(totalCerveja /355)} Latinhas de Cerveja</p>`
+    resultado.innerHTML += `<p>${Math.ceil(totalCerveja /355)} Latinha de Refrigerante</p>`
     resultado.innerHTML += `<p>${Math.ceil(totalBebidas / 2000)} Garrafas de Bebida</p>`
 }
 
