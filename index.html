@@ -13,15 +13,29 @@
     <div id="box">
         <h1>CHURRAS</h1>
         <ul>
-            <li class="adultos"><input name="name" type="number" placeholder="Adulto"></li>
-            <li class="crianca"><input name="name" type="number" placeholder="Criança"></li>
-            <li class="tempo"><input name="duracao" type="number" placeholder="Duração(h)"></li>
+            <li class="adultos">
+                <div class="input">
+                    <input id="adultos" name="name" min="1" type="number" placeholder="Adulto" autocomplete="off">
+                </div>
+            </li>
+            <li class="crianca">
+                <div class="input">
+                    <input id="criancas" name="name" min="1" type="number" placeholder="Criança" autocomplete="off">
+                </div>
+            </li>
+            <li class="tempo">
+                <div class="input">
+                    <input id="duracao" name="duracao" min="1" type="number" placeholder="Duração(h)" autocomplete="off">
+                </div>
+            </li>
         </ul>
-        <button id="button" onclick="calcular()">Calcular</button>
-    </div>
-    <div id="resultado">
 
+        
+        <button id="button" onclick="calcular()">Calcular</button>
+        <div id="resultado"></div>
     </div>
+
+    
     <script src="app.js"></script>
 </body>
 </html>

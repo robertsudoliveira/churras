@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
 
-
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-
 } 
 
- body{
+body{
      height: 100vh;
      display: flex;
      justify-content: center;
@@ -16,87 +14,111 @@
      flex-direction: column; 
      background-image: url(./Imagens/felipepelaquim-utriGopnQe4-unsplash.jpg);
      background-size: cover;
-    
- }
+}
 
 #box{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 500px;
-    margin:auto;
-    background-color: #c71616;
+    margin: auto;
+    background-color: #b11818;
     padding: 20px;  
     border-radius: 10px;
     font-family: sans-serif;
     color: black;
     text-shadow: 2px 2px 2px  white;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     box-shadow:  5px 5px 5px black;
-    font-family: 'Fjalla One', sans-serif;
     letter-spacing: 1rem; 
-
+    
 }
   
 input{
     width: 300px;
     height: 50px;
     display: inline-block;
+    font-size: 1.25rem;
     box-sizing: border-box;
     margin-bottom: 10px;    
     border-radius: 8px; 
     padding: 10px;
 
 }
+
 h1{
-    margin:0;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
 }
 
 button{
     width: 30%;
-    height: 25px;
+    height: 50px;
+    font-size: 1.25rem;
+    border: none;
     border-radius: 10px;
+    box-shadow: 1px 5px 5px #00000080;
+    transition: .25s ease-in; 
 }
 
 button:hover{
-    background-color: black;
-    color:white
+    letter-spacing: 2px;
+    transform:  scale(.95);
+    box-shadow: none;
 }
-
 
 #box ul li{
+    position: relative;
     list-style: none;
 }
-.adultos::before{
+
+.adultos > .input::before{
     content: "";
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-35px, 27%);
     width: 30px;
     height: 30px;
     background-image: url(./Imagens/adulto1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.crianca::before{
+
+.crianca > .input::before{
     content: "";
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-35px, 27%);
     width: 30px;
     height: 30px;
     background-image: url(./Imagens/garoto.png);
     background-repeat: no-repeat;
     background-size: cover;
-  
 }
-.tempo::before{
+
+.tempo > .input::before{
     content: "";
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-35px, 27%);
     width: 30px;
     height: 30px;
     background-image: url(./Imagens/tempo.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
+ 
+#resultado {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    text-shadow: none;
+    letter-spacing: 1px;
+    color:  white;
+}
