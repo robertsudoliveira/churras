@@ -7,15 +7,9 @@
 
 
   <h2	align="center" >🎨Layouts</h2>
-  
 
 
-
- <---- aqui será posto o projeto 
- 
-
-
-
+<img src="./.github/gravação-do-churras.gif"	alt="churrasco" />
 
 <h4	align="center">As seguintes tecnologias foram utilizadas: </h4>
 
@@ -30,4 +24,3 @@
 
 [
    ![github](https://img.shields.io/badge/GitHub-100000?style=flat-the-border&logo=github&logoColor=white)](https://github.com/robertsudoliveira) [![Link](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-the-border&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/robert-oliveira2020/) [ ![mailto](https://img.shields.io/badge/Gmail-D14836?style=flat-the-border&logo=gmail&logoColor=white)](mailto:robertsudoliveira@gmail.com)
-
