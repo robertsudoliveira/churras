@@ -10,46 +10,49 @@
 </head>
 
 <body>
-    <div id="banners">
-        <div style="background-image: url('./Imagens/Alcatra.jpg');" class="slide fade"></div> 
-        <div style="background-image: url('./Imagens/filé.mignon.jpg');" class="slide fade"></div>
-        <div style="background-image: url('./Imagens/Maminha.jpg');" class="slide fade"></div>
-        <div style="background-image: url('./Imagens/Picanha.jpg');" class="slide fade"></div>
-        
-        <div class="balls">
-          <span data-index="0"></span>
-          <span data-index="1"></span>
-          <span data-index="2"></span>
-          <span data-index="3"></span>
-          
+    <div  id="container">
+        <div id="banners">
+            <div style="background-image: url('./Imagens/Alcatra.jpg');" class="slide fade"></div>
+            <div style="background-image: url('./Imagens/filé.mignon.jpg');" class="slide fade"></div>
+            <div style="background-image: url('./Imagens/Maminha.jpg');" class="slide fade"></div>
+            <div style="background-image: url('./Imagens/Picanha.jpg');" class="slide fade"></div>
+
+            <div class="balls">
+                <span data-index="0"></span>
+                <span data-index="1"></span>
+                <span data-index="2"></span>
+                <span data-index="3"></span>
+
+            </div>
         </div>
-      </div>
-    <div id="box">
-        <h1>CHURRAS</h1>
-        <ul>
-            <li class="adultos">
-                <div class="input">
-                    <input id="adultos" name="name" min="1" type="number" placeholder="Adulto" autocomplete="off">
-                </div>
-            </li>
-            <li class="crianca">
-                <div class="input">
-                    <input id="criancas" name="name" min="1" type="number" placeholder="Criança" autocomplete="off">
-                </div>
-            </li>
-            <li class="tempo">
-                <div class="input">
-                    <input id="duracao" name="duracao" min="1" type="number" placeholder="Duração(h)" autocomplete="off">
-                </div>
-            </li>
-        </ul>
+        <div id="box">
+            <h1>CHURRAS</h1>
+            <ul>
+                <li class="adultos">
+                    <div class="input">
+                        <input id="adultos" name="name" min="1" type="number" placeholder="Adulto" autocomplete="off">
+                    </div>
+                </li>
+                <li class="crianca">
+                    <div class="input">
+                        <input id="criancas" name="name" min="1" type="number" placeholder="Criança" autocomplete="off">
+                    </div>
+                </li>
+                <li class="tempo">
+                    <div class="input">
+                        <input id="duracao" name="duracao" min="1" type="number" placeholder="Duração(h)"
+                            autocomplete="off">
+                    </div>
+                </li>
+            </ul>
 
-        
-        <button id="button" onclick="calcular()">Calcular</button>
-        <div id="resultado"></div>
+
+            <button id="button" onclick="calcular()">Calcular</button>
+            <div id="resultado"></div>
+        </div>
+
     </div>
-
-    
     <script src="app.js"></script>
 </body>
+
 </html>
