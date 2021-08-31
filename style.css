@@ -24,18 +24,19 @@ body{
     flex-direction: column;
     align-items: center;
     width: 500px;
-    margin: auto;
+    justify-content: center;
+    text-align: center;
     background-color: #b11818;
     padding: 20px;  
     border-radius: 10px;
     font-family: sans-serif;
     color: black;
     text-shadow: 2px 2px 2px  white;
-    text-align: center;
     padding-bottom: 60px;
     box-shadow:  5px 5px 5px black;
     letter-spacing: 1rem; 
     margin-left: 15px;
+   
     
 }
   
@@ -54,6 +55,11 @@ input{
 h1{
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
+    margin-left: 50%;
+    transform: translateX(-40%);
+    margin-bottom: -12px;
+    
+
 }
 
 button{
