@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
 
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+    /* /* margin: 0;
+    padding:0; */
+    box-sizing: border-box; */
 } 
 
 body{
@@ -12,8 +12,8 @@ body{
      justify-content: center;
      align-items: center;
      flex-direction: column; 
-     background-image: url(./Imagens/felipepelaquim-utriGopnQe4-unsplash.jpg);
      background-size: cover;
+     background: #ccc;
 }
 
 #box{
@@ -32,6 +32,7 @@ body{
     padding-bottom: 60px;
     box-shadow:  5px 5px 5px black;
     letter-spacing: 1rem; 
+    margin-left: 15px;
     
 }
   
@@ -60,13 +61,14 @@ button{
     border-radius: 10px;
     box-shadow: 1px 5px 5px #00000080;
     transition: .25s ease-in; 
+    
 }
 
-button:hover{
+ button:hover{
     letter-spacing: 2px;
     transform:  scale(.95);
-    box-shadow: none;
-}
+    box-shadow: none; */
+} 
 
 #box ul li{
     position: relative;
@@ -121,4 +123,76 @@ button:hover{
     text-shadow: none;
     letter-spacing: 1px;
     color:  white;
+   
 }
+
+#banners {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    position: relative;  
+    flex-direction: column;
+    /* position: relative; */
+
+  }
+  
+  .slide {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  
+    display: inline-block;
+  }
+  
+  .balls {
+     position: absolute;
+     index: 5;
+     bottom: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+     
+  }
+  
+  .balls span {
+    display: inline-block;
+      background-color: #ffffff;
+      width: 10px;
+      height: 10px;
+    border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      margin: 0 10px;
+  }
+  
+  .balls span.active-slide {
+    background-color: #c71616;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from { opacity: 0.2s }
+    to { opacity: 1 }
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.2 }
+    to { opacity: 1 }
+  }
+
+@media (max-width: 520px) {
+    #box {
+      width: 100%;
+      padding: 0 2rem;
+    }
+  }

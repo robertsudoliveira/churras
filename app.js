@@ -3,6 +3,11 @@
 // Refrigerante/agua = 1000ml por pessoa (+6 horas = 1500ml)
 // Crianças valem a metade (0,5)
 
+var currentSlide = 0;
+var slides = document.querySelectorAll(".slide");
+var spans = document.querySelectorAll(".balls > span");
+var slideCount = slides.length;
+
 const InputAdultos = document.querySelector("#adultos")
 const InputCriancas = document.querySelector("#criancas")
 const InputDuracao = document.querySelector("#duracao")
@@ -44,3 +49,29 @@ function Bebida(tempo) {
         return 1000
     }
 }
+function showSlide(index) {
+    slides.forEach(function(slide) {
+      slide.style.display = "none";
+    });
+    
+    spans.forEach(function(span) {
+      span.classList.remove("active-slide");
+      span.addEventListener("click", function (event) {
+          showSlide(event.target.getAttribute("data-index"));
+      });
+    });
+  
+    slides[index].style.display = "block";
+    spans[index].classList.add("active-slide");
+  }
+  
+  showSlide(currentSlide);
+  
+  setInterval(function () {
+      currentSlide++;
+    
+    if (currentSlide >= slideCount) currentSlide = 0;
+    
+    showSlide(currentSlide);
+  }, 3000);
+
